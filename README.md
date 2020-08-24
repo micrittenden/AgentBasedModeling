@@ -1,4 +1,4 @@
-# Matt Crittenden's Page for Agent-based Modelling (DATA 440)
+# Matt Crittenden's page for Agent-based Modelling
 
 [View master in GitHub](https://github.com/micrittenden/Data440-AgentBasedModelling)
 
