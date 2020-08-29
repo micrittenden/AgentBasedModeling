@@ -6,7 +6,7 @@
 
 Here is a line plot customized with blue color, dashed line style, and square points.
 
-[](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png)
+[Image of line plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png)
 
 ### Part Two: Creating a More Complicated Plot
 
@@ -18,7 +18,7 @@ Here is a more complicated plot which was created using a dataframe. The 10 smal
 
 Here is a plot similar to the one above, but with increased dwellings (50), small trees (40), and large trees (12). The person now also travels between 7 dwellings.
 
-![Image of challenge plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/ChallengePlot.png)
+[Image of challenge plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/ChallengePlot.png)
 
 
 [View code](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/getting_started_w_R.R)
