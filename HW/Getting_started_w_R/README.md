@@ -6,7 +6,7 @@
 
 Here is a line plot customized with blue color, dashed line style, and square points.
 
-![Image of line plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png?raw=TRUE)
+![Image of line plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png)
 
 ### Part Two: Creating a More Complicated Plot
 
