@@ -6,13 +6,13 @@
 
 Here is a line plot customized with blue color, dashed line style, and square points.
 
-[](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png)
+[Image of line plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingLinePlot.png)
 
 ### Part Two: Creating a More Complicated Plot
 
 Here is a more complicated plot which was created using a dataframe. The 10 small black squares are dwellings and the 20 green circles are small/large trees. A curved, dashed line represents a person's path as they walk between three dwellings.
 
-![](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingComplicatedPlot.png)
+[Image of complicated plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/CreatingComplicatedPlot.png)
 
 ### Part Three: Created the Challenge Plot
 
