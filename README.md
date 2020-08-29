@@ -12,4 +12,4 @@
 
 #### Day 3
 
-[Spatial population statistics (view)](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Spatial_population_statistics/README.md)
+[Spatial population statistics (view)](https://micrittenden.github.io/Data440-AgentBasedModelling/HW/Spatial_population_statistics)
