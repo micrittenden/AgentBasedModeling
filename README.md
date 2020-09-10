@@ -6,10 +6,10 @@
 
 #### Day 2
 
-[Getting started with R (code)](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/Getting_started_w_R/getting_started_w_R.R)
+[Getting started with R (code)](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/1.2_Getting_started_w_R/getting_started_w_R.R)
  | 
-[Getting started with R (view)](https://micrittenden.github.io/Data440-AgentBasedModelling/HW/Getting_started_w_R)
+[Getting started with R (view)](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/1.2_Getting_started_w_R/README.md)
 
 #### Day 3
 
-[Spatial population statistics (view)](https://micrittenden.github.io/Data440-AgentBasedModelling/HW/Spatial_population_statistics)
+[Spatial population statistics (view)](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/2.1_Spatial_population_statistics/README.md)
