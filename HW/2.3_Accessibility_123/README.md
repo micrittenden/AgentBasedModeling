@@ -18,6 +18,6 @@ Then, I added data on roads (primary, secondary, and nonclassified) from the Wor
 
 ### Part Three: Adding Topographical Data
 
-Finally, I added a 30-meter-resolution DEM of Zimbabwe, cropped to the boundary of Seke district. The final 3D map includes roads in orange (scaled in size) and health facilities in red (points denoting hospitals are slightly larger than those for clinics)
+Finally, I added a 30-meter-resolution DEM of Zimbabwe from RCRMD (https://opendata.rcmrd.org/datasets/zimbabwe-srtm-dem-30-metres?geometry=12.524%2C-23.281%2C47.307%2C-16.045), cropped to the boundary of Seke district. The final 3D map includes roads in orange (scaled in size) and health facilities in red (points denoting hospitals are slightly larger than those for clinics)
 
 ![Image of 3D plot](https://github.com/micrittenden/Data440-AgentBasedModelling/blob/master/HW/2.3_Accessibility_123/seke_3d.png)
