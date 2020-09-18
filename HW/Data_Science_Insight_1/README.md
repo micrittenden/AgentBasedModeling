@@ -9,3 +9,11 @@ Agent-based modeling is well-suited for use in planning and policymaking as well
 #### Sans-jargon explanation:
 
 Agent-based modeling was used as a primary method in a community-based project to improve the energy efficiency of households in a group of neighborhoods. In this project, an agent-based model was presented as a module in each phase of a project involving youth volunteers. The participants were able to interact with the model on their computers and see how the small actions they make or small environmental changes (e.g., the creation of a new green space in the community) amount to much larger changes in the system (i.e., energy efficiency of households) over time. The agent-based model is used here both as a method of experimenting (observing combinations and situations which never happened) and boosting individual and collective capacity as an educational/storytelling device.
+
+#### Description of model:
+
+The weatherization model was developed using the open-source software platform NetLogo (Wilensky, 1999). In this model, 29 “household” agents interact with one another in a social network and make decisions about weatherizing their homes over a period of 24 simulated months. The ABM contains four main sub-models: 1) “Initialization,” 2) “Agent Satisfaction Evaluation,” 3) “Information Sharing,” and 4) “Agent Decision Making.” The “Initialization” sub-model is run once at the beginning of each simulation run. The remaining four sub-models are run in sequence in each monthly time-step.
+
+#### Results:
+
+The youth participants recognized how they (and their actions) can contribute to greater positive change in their community (Des Moines, Iowa).
