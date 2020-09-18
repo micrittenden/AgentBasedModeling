@@ -12,8 +12,8 @@ Agent-based modeling was used as a primary method in a community-based project t
 
 #### Description of model:
 
-The weatherization model was developed using the open-source software platform NetLogo (Wilensky, 1999). In this model, 29 “household” agents interact with one another in a social network and make decisions about weatherizing their homes over a period of 24 simulated months. The ABM contains four main sub-models: 1) “Initialization,” 2) “Agent Satisfaction Evaluation,” 3) “Information Sharing,” and 4) “Agent Decision Making.” The “Initialization” sub-model is run once at the beginning of each simulation run. The remaining four sub-models are run in sequence in each monthly time-step.
+"The weatherization model was developed using the open-source software platform NetLogo (Wilensky, 1999). In this model, 29 “household” agents interact with one another in a social network and make decisions about weatherizing their homes over a period of 24 simulated months. The ABM contains four main sub-models: 1) “Initialization,” 2) “Agent Satisfaction Evaluation,” 3) “Information Sharing,” and 4) “Agent Decision Making.” The “Initialization” sub-model is run once at the beginning of each simulation run. The remaining four sub-models are run in sequence in each monthly time-step."      (Shenk et al 262)
 
 #### Results:
 
-"The youth participants recognized how they (and their actions) can contribute to greater positive change in their community (Des Moines, Iowa)."   (Shenk et al 262)
+The youth participants recognized how they (and their actions) can contribute to greater positive change in their community (Des Moines, Iowa).
