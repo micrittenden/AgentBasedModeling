@@ -15,3 +15,7 @@
 #### Sept 10
 
 [Accessibility 1, 2, and 3](HW/2.3_Accessibility_123/README.md)
+
+#### Sept 17
+
+[Data Science Insight 1](HW/Data_Science_Insight_1/README.md
