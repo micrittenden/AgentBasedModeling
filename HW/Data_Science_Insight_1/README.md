@@ -16,4 +16,4 @@ The weatherization model was developed using the open-source software platform N
 
 #### Results:
 
-The youth participants recognized how they (and their actions) can contribute to greater positive change in their community (Des Moines, Iowa).
+"The youth participants recognized how they (and their actions) can contribute to greater positive change in their community (Des Moines, Iowa)."   (Shenk et al 262)
