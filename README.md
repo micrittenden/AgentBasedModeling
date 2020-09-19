@@ -19,3 +19,7 @@
 #### Sept 17
 
 [Data Science Insight 1](HW/Data_Science_Insight_1/README.md)
+
+#### Sept 19
+
+[Project 1](HW/Project_1/README.md)

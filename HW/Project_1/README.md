@@ -6,10 +6,6 @@
 
 ![Image of pop raster](masheast_duo.png)
 
-### Part Three: Honing in on Seke and Mapping De Facto Settlements
+### Part Three: Honing in on Seke and Mapping De Facto Settlements and Defining Characteristics
 
-### Part Four: Adding Roads
-
-### Part Five: Adding Health Care Facilities
-
-### Part Six: Adding Elevation
+![Image of accesibilities](seke_3d.png)
