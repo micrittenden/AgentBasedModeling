@@ -2,6 +2,8 @@
 
 ### Part One: Case Selection
 
+![Image of zwe, me, seke](tri_map.png)
+
 ### Part Two: Plotting Population Density Across Mashonaland East
 
 ![Image of pop raster](masheast_duo.png)
@@ -12,4 +14,4 @@
 
 ![Image of settlements, roads, and health facilities](seke_health.png)
 
-![Image of elevation(seke_3d.png)
+![Image of elevation](seke_3d.png)
