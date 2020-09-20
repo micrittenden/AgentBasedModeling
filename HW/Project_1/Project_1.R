@@ -36,10 +36,93 @@ afr_health <- readxl::read_xlsx("./data/health_facilities.xlsx")
 zwe_elevation <- raster("./data/zwe_SRTM_DEM_30_m.tiff")
 
 
-#---plot population density across ADM1s in the country-----
+#---plot map of Zimbabwe, Mashonaland East, and Seke for case selection-----
+
+masheast1 <- zwe_adm1 %>%
+  filter(NAME_1 == "Mashonaland East")
 
 masheast <- zwe_adm2 %>%
   filter(NAME_1 == "Mashonaland East")
+
+seke <- zwe_adm2 %>%
+  filter(NAME_1 == "Mashonaland East") %>%
+  filter(NAME_2 == "Seke")
+
+
+plot1 <- ggplot() +
+  geom_sf(data = zwe_adm1,
+          size = 0.5,
+          color = "gray50",
+          fill = "khaki1") +
+  geom_sf(data = masheast1,
+          size = 0.5,
+          color = "gray50",
+          fill = "khaki2") +
+  geom_sf_text(data = zwe_adm1,
+               aes(label = NAME_1),
+               size = 3) +
+  xlab("longitude") + ylab("latitude") +
+  ggtitle("Zimbabwe") +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5),
+        panel.background = element_rect(fill = "azure"),
+        panel.border = element_rect(fill = NA))
+
+plot2 <- zwe_adm2 %>%
+  filter(NAME_1 == "Mashonaland East") %>%
+  ggplot() +
+  geom_sf(size = .15) +
+  geom_sf_text(aes(label = NAME_2),
+               size = 1.75) +
+  geom_sf(data = masheast,
+          size = .5,
+          color = "gray50",
+          fill = "khaki2") +
+  geom_sf(data = seke,
+          size = .5,
+          color = "gray50",
+          fill = "khaki3") +
+  geom_sf_text(data = masheast,
+               aes(label = NAME_2),
+               size = 3) +
+  xlab("longitude") + ylab("latitude") +
+  ggtitle("Mashonaland East") +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5),
+        panel.background = element_rect(fill = "azure"),
+        panel.border = element_rect(fill = NA))
+
+
+plot3 <- zwe_adm2 %>%
+  filter(NAME_1 == "Mashonaland East") %>%
+  filter(NAME_2 == "Seke") %>%
+  ggplot() +
+  geom_sf(data = seke,
+          size = .5,
+          color = "gray50",
+          fill = "khaki3") +  
+  geom_sf_text(aes(label = NAME_2),
+               size = 3) +
+  xlab("longitude") + ylab("latitude") +
+  ggtitle("Seke") +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5),
+        panel.background = element_rect(fill = "azure"),
+        panel.border = element_rect(fill = NA))
+
+
+
+ggplot() +
+  coord_equal(xlim = c(0, 6.0), ylim = c(0, 4), expand = FALSE) +
+  annotation_custom(ggplotGrob(plot1), xmin = 0.0, xmax = 4.0, ymin = 0, 
+                    ymax = 4.0) +
+  annotation_custom(ggplotGrob(plot3), xmin = 4.0, xmax = 6.0, ymin = 0, 
+                    ymax = 2.0) +
+  annotation_custom(ggplotGrob(plot2), xmin = 4.0, xmax = 6.0, ymin = 2.0, 
+                    ymax = 4.0) +
+  theme_void()
+                              
+#ggsave("tri_map.png", width = 10, height = 10)
+
+
+#---plot population density across ADM1s in the country-----
 
 masheast_pop20 <- crop(zwe_pop20, masheast)
 masheast_pop20 <- mask(masheast_pop20, masheast)
@@ -130,7 +213,7 @@ plot(st_geometry(seke), add = TRUE)
 #dev.off()
 
 #make version of seke which is compatible with spatstat
-st_write(seke, "./data/seke/seke.shp", delete_dsn=TRUE)
+#st_write(seke, "./data/seke/seke.shp", delete_dsn=TRUE)
 seke_with_mtools <- readShapeSpatial("./data/seke/seke.shp")
 
 #create window object to be used with rpoint
@@ -218,20 +301,53 @@ all_polys_seke <- all_polys_seke %>%
 
 #add an intermediary step which gets rid of mess ups
 
-all_polys_seke <- all_polys_seke %>%
-  mutate(temp_label = sample(1:nrow(all_polys_seke), nrow(all_polys_seke), replace = FALSE))
+all_polys_seke$temp_label <- seq.int(nrow(all_polys_seke))
 
 ggplot() +
   geom_sf(data = all_polys_seke) +
   geom_sf_label(data = all_polys_seke,
                 aes(label = temp_label))
 
-#this part may need to change each time
 all_polys_seke <- all_polys_seke %>%
-  filter(temp_label != 13) %>%
-  filter(temp_label != 15)
+  filter(temp_label != 11) %>%
+  filter(temp_label != 19)
 
 all_polys_seke <- all_polys_seke[,-5]
+
+#create a map and bar plot duo of settlement populations
+all_polys_seke$perm_label <- seq.int(nrow(all_polys_seke))
+
+settle_map<- ggplot(all_polys_seke) +
+  geom_sf(aes(fill = pop20)) +
+  geom_sf_text(aes(label = perm_label),
+               color = "black",
+               size = 4) +
+  geom_sf_text(aes(label = round(density, 2)),
+               color = "gray20",
+               size = 3, nudge_x = 0.02, nudge_y = -0.02) +
+  xlab("longitude") + ylab("latitude") +
+  scale_fill_gradient(low = "yellow", high = "red") +
+  ggtitle("De Facto Settlements in Seke")
+
+settle_pop <- as.data.frame(all_polys_seke)[,c(5,3)]
+settle_pop$perm_label <- as.character(settle_pop$perm_label)
+
+settle_bar <- settle_pop %>%
+  mutate(perm_label = fct_reorder(perm_label, pop20)) %>%
+  ggplot(aes(x=perm_label, y=pop20, fill=pop20)) +
+  geom_bar(stat="identity", color="gray35", width=0.7) +
+  coord_flip() +
+  xlab("settlements") + ylab("population") +
+  geom_text(aes(label=scales::percent(pop20/sum(pop20))),
+            position = position_stack(vjust = 0.5),
+            color = "black", size=4) +
+  scale_fill_gradient(low = "yellow", high = "red") +
+  ggtitle(label="Population & share of Population (in %)")
+
+seke_duo <- ggarrange(settle_map, settle_bar, nrow = 1, widths =c(3, 1.5))
+annotate_figure(seke_duo, top = text_grob("Seke in 2020", color = "black", face = "bold"))
+
+#ggsave("seke_duo.png", width = 15, height = 10, dpi = 200)
 
 #crop the polys to shape of seke
 all_polys_seke_crop <- st_intersection(all_polys_seke, seke)
