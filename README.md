@@ -23,3 +23,7 @@
 #### Sept 19
 
 [Project 1](HW/Project_1/README.md)
+
+#### Sept 30
+
+[Project 2](HW/Project_2/README.md)
