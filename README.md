@@ -24,6 +24,10 @@
 
 [Project 1](HW/Project_1/README.md)
 
-#### Sept 30
+#### October 16
+
+[Data Science Insight 2](HW/Data_Science_Insight_2/README.md)
+
+#### October 18
 
 [Project 2](HW/Project_2/README.md)
