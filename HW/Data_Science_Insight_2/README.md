@@ -18,13 +18,13 @@ To do so, they start with DMSP data from 1992 to 2013 and VIIRS data from 2014 t
 #### Framework (with some math which is above my head):
 
 (1) Composite annual VIIRS data from monthly observations and remove noise.
-![function 1](fun1.jpg)
-![image 1](img1.jpg)
+![function 1](fun1.JPG)
+![image 1](img1.JPG)
 (2) Quantify the relationship between processed VIIRS data and DMSP data using a sigmoid function.
-![function 2](fun2.jpg)
-![image 2](img2.jpg)
+![function 2](fun2.JPG)
+![image 2](img2.JPG)
 (3) Apply the derived relationship at the global scale to obtain the DMSP-like data for years 2014-2018. See the [original article](https://doi.org/10.1038/s41597-020-0510-y) for the intermediate steps and exact calculations.
-![image 3](img3.jpg)
+![image 3](img3.JPG)
 
 #### Accessing the harmonized nighttime lights data:
 
