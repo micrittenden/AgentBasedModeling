@@ -28,6 +28,6 @@
 
 [Data Science Insight 2](HW/Data_Science_Insight_2/README.md)
 
-#### October 18
+#### October 25
 
 [Project 2](HW/Project_2/README.md)
