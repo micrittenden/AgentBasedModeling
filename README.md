@@ -35,3 +35,7 @@
 #### October 30
 
 [Data Science Insight 3](HW/Data_Science_Insight_3/README.md)
+
+#### November 13
+
+[Data Science Knowledge Creation][HW/Data_Knowledge_Creation/README.md)
