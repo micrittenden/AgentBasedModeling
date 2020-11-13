@@ -38,4 +38,4 @@
 
 #### November 13
 
-[Data Science Knowledge Creation][HW/Data_Knowledge_Creation/README.md)
+[Data Science Knowledge Creation](HW/Data_Knowledge_Creation/README.md)
