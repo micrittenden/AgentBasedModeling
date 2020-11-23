@@ -10,7 +10,7 @@ Figure 2:
 ![locations](locations.PNG)
 
 Figure 3:
-![odm](origin_destination_matrix.PNG)
+![odm](origin_dest_matrix.PNG)
 
 Figure 4:
 ![zwe_gif](zwe_output.gif)
