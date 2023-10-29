@@ -1,45 +1,11 @@
-# Matt Crittenden's page for Agent-based Modelling
+# Coursework for DATA 440: Agent-based Modeling
 
 [View master in GitHub](https://github.com/micrittenden/Data440-AgentBasedModelling)
 
-### Homework
+This repo contains some of the project files from a three-part analysis of simulated regional migration in Zimbabwe using synthetically generated population data.
 
-#### Aug 19
+[Project 1](Project_1/README.md)
 
-[Getting started with R](HW/1.2_Getting_started_w_R/README.md)
+[Project 2](Project_2/README.md)
 
-#### Aug 24
-
-[Spatial population statistics](HW/2.1_Spatial_population_statistics/README.md)
-
-#### Sept 10
-
-[Accessibility 1, 2, and 3](HW/2.3_Accessibility_123/README.md)
-
-#### Sept 17
-
-[Data Science Insight 1](HW/Data_Science_Insight_1/README.md)
-
-#### Sept 19
-
-[Project 1](HW/Project_1/README.md)
-
-#### October 16
-
-[Data Science Insight 2](HW/Data_Science_Insight_2/README.md)
-
-#### October 25
-
-[Project 2](HW/Project_2/README.md)
-
-#### October 30
-
-[Data Science Insight 3](HW/Data_Science_Insight_3/README.md)
-
-#### November 13
-
-[Data Science Knowledge Creation](HW/Data_Knowledge_Creation/README.md)
-
-#### November 22
-
-[Project 3](HW/Project_3/README.md)
+[Project 3](Project_3/README.md)
