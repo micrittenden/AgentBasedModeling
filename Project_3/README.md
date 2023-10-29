@@ -43,7 +43,7 @@ Figure 5:
 
 ### Part 3: Voronoi Polygons of Seke District
 
-Finally, I import data from Project 1 on the de facto settlements and center points of Seke and data from Project 2 on the synthetically generated population of Mashonaland East. I intersect the synthetic population data with the boundary of Seke to subset the target population. Figure 6 shows overlays these data, with the tiny black dots representing the synthetic population.
+Finally, I import data from Project 1 on the de facto settlements and center points of Seke and data from Project 2 on the synthetically generated population of Mashonaland East. I intersect the synthetic population data with the boundary of Seke to subset the target population. Figure 6 overlays these data, with the tiny black dots representing the synthetic population.
 
 Figure 6:
 <br/>
