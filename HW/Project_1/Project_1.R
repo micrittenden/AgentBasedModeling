@@ -1,8 +1,6 @@
 # Matt Crittenden
-# DATA 440 - ABM
 # Sept 18 2020 (created)
 # Sept 18 2020 (edited)
-# Project 1
 
 
 #---import packages-----
@@ -22,7 +20,7 @@ library(rayrender)
 
 #---set wd and import data-----
 
-setwd("~/William_and_Mary/WM_Year4Fall2020/ABM/HW/Project_1")
+setwd("FILEPATH")
 
 zwe_adm1 <- read_sf("./data/gadm36_ZWE_shp/gadm36_ZWE_1.shp")
 zwe_adm2 <- read_sf("./data/gadm36_ZWE_shp/gadm36_ZWE_2.shp")
@@ -299,7 +297,7 @@ all_polys_seke <- all_polys_seke %>%
 all_polys_seke <- all_polys_seke %>%
   filter(pop20 > 100)
 
-#add an intermediary step which gets rid of mess ups
+#add an intermediary step which gets rid of mess ups from noise
 
 all_polys_seke$temp_label <- seq.int(nrow(all_polys_seke))
 
