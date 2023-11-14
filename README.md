@@ -1,6 +1,4 @@
-# Coursework for DATA 440: Agent-based Modeling
-
-[View master in GitHub](https://github.com/micrittenden/Data440-AgentBasedModelling)
+# Agent-based Modeling in Zimbabwe
 
 This repo contains some of the project files from a three-part analysis of simulated regional migration in Zimbabwe using synthetically generated population data.
 
